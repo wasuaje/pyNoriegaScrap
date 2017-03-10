@@ -1,0 +1,51 @@
+1489173087318	geckodriver	INFO	Listening on 127.0.0.1:57138
+1489173089473	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.Q1RwB4DGFs6S
+1489173089519	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489173089597	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57144
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+1489173852994	geckodriver	INFO	Listening on 127.0.0.1:57394
+1489173855086	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.iA1XWMNeDdND
+1489173855135	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489173855135	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57400
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+1489174190218	geckodriver	INFO	Listening on 127.0.0.1:57567
+1489174192422	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.tKntOSBSPuR8
+1489174192492	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489174192525	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57573
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+JavaScript error: resource:///modules/WindowsPreviewPerTab.jsm, line 406: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITaskbarTabPreview.invalidate]
+JavaScript error: resource:///modules/WindowsPreviewPerTab.jsm, line 406: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITaskbarTabPreview.invalidate]
+JavaScript error: resource:///modules/WindowsPreviewPerTab.jsm, line 406: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITaskbarTabPreview.invalidate]
+JavaScript error: resource:///modules/WindowsPreviewPerTab.jsm, line 406: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITaskbarTabPreview.invalidate]
+JavaScript error: resource:///modules/WindowsPreviewPerTab.jsm, line 406: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsITaskbarTabPreview.invalidate]
+1489174270764	geckodriver	INFO	Listening on 127.0.0.1:57598
+1489174272856	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.bZEnSwfkLzTl
+1489174272909	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489174272939	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57604
+1489174310078	geckodriver	INFO	Listening on 127.0.0.1:57632
+1489174312177	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.sOgxo81vfkIE
+1489174312255	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489174312271	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57638
+1489174340822	geckodriver	INFO	Listening on 127.0.0.1:57678
+1489174342960	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.WB2hqsuesy6j
+1489174343023	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489174343038	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57685
+1489174387979	geckodriver	INFO	Listening on 127.0.0.1:57705
+1489174390113	mozprofile::profile	INFO	Using profile path C:\Users\WUELFH~1.ASU\AppData\Local\Temp\rust_mozprofile.489Gk9bTdnjx
+1489174390176	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
+1489174390191	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57711
