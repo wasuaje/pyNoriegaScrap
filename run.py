@@ -87,11 +87,11 @@ class SeleniumTest():
         ])
 
         # Send the message via our own SMTP server.
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.ehlo()
-        s.starttls()
-        s.send_message(msg)
-        s.quit()
+s = smtplib.SMTP('smtp.gmail.com', 587)
+s.ehlo()
+s.starttls()
+s.send_message(msg)
+s.quit()
 
     def checkbuy(self, paymethod):
         print(paymethod)
