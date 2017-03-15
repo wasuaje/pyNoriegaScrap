@@ -87,105 +87,11 @@ class SeleniumTest():
         ])
 
         # Send the message via our own SMTP server.
-s = smtplib.SMTP('smtp.gmail.com', 587)
-s.ehlo()
-s.starttls()
-s.send_message(msg)
-s.quit()
-
-    def checkbuy(self, paymethod):
-        print(paymethod)
-        self.driver.get(self.url)
-        self.doscreenshot('main_')
-
-        self.wait.until(
-            EC.element_to_be_clickable((By.CLASS_NAME, 'trigger-buy'))).click()
-
-        sleep(0.3)
-        self.doscreenshot('after buy click')
-        payments = self.driver.\
-            find_elements_by_class_name('payment-method-icon')
-
-        for p in payments:
-            try:
-                alt = p.get_attribute('alt').lower()
-            except:
-                continue
-            if alt == paymethod.lower() and p.is_displayed():
-                paybank = p
-                break
-
-        # sleep(1)
-        paybank.click()
-        # login
-        sleep(0.3)
-        self.loginphone()
-        # end login
-        sleep(0.3)
-        self.doscreenshot('after verifycate phone')
-        # press buy
-        bt_buys = self.driver.find_elements_by_class_name('buy-go')
-        for b in bt_buys:
-            if b.get_attribute('class') \
-                    .find('place-order') > -1:
-                b.click()
-                break
-        self.wait.until(
-            EC.element_to_be_clickable((By.CLASS_NAME, 'unique_ref')))
-        self.doscreenshot('End_')
-        print('Ok')
-        self.driver.delete_all_cookies()
-
-    def checksell(self, sellmethon):
-        print(sellmethon)
-        self.driver.get(self.url)
-        self.doscreenshot('main_')
-        self.wait.until(EC.element_to_be_clickable((
-            By.CLASS_NAME, 'trigger-sell'))).click()
-        self.doscreenshot('after sell click')
-        if sellmethon == 'fa-credit-card-alt':
-            self.wait.until(EC.element_to_be_clickable((
-                By.CLASS_NAME, sellmethon))).click()
-            self.wait.until(EC.element_to_be_clickable((
-                By.NAME, 'number'))).send_keys('1111')
-            self.wait.until(EC.element_to_be_clickable((
-                By.CLASS_NAME, 'save-card'))).click()
-        elif sellmethon == 'Qiwi wallet':
-            self.wait.until(EC.element_to_be_clickable((
-                By.CLASS_NAME, 'payment-method-icon')))
-            selments = self.driver. \
-                find_elements_by_class_name('payment-method-icon')
-
-            for p in selments:
-                try:
-                    alt = p.get_attribute('alt').lower()
-                except:
-                    continue
-                if alt == sellmethon.lower() and p.is_displayed():
-                    sellbank = p
-                    break
-            sellbank.click()
-            self.wait.until(EC.element_to_be_clickable((
-                By.CLASS_NAME, 'phone'))).send_keys('1111')
-            card_go = self.driver.find_elements_by_class_name('save-card')
-            card_go[1].click()
-        # cash
-        else:
-            self.wait.until(EC.element_to_be_clickable((
-                By.CLASS_NAME, 'fa-money'))).click()
-            sleep(0.5)
-            self.driver.find_element_by_class_name('next-step').click()
-        # login
-        sleep(0.8)
-        self.loginphone()
-        # end login
-        self.wait.until(EC.element_to_be_clickable((
-            By.CLASS_NAME, 'sell-go'))).click()
-        self.wait.until(EC.element_to_be_clickable((
-            By.CLASS_NAME, 'unique_ref')))
-        self.doscreenshot('End_')
-        print('Ok')
-        self.driver.delete_all_cookies()
+        s = smtplib.SMTP('mail.wasuaje.com', 25)
+        s.ehlo()
+        s.starttls()
+        s.send_message(msg)
+        s.quit()
 
     def doscreenshot(self, filename):
         if self.issavescreen:
