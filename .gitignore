@@ -1,0 +1,7 @@
+/build
+/dist
+*.zip
+*.log
+/__pycache__
+/Screeshots
+run.spec
